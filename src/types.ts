@@ -44,4 +44,9 @@ export type Computed = {
   bestTimeString?: string;
 };
 
+export enum ActivityType {
+  Running = 'running',
+  Riding = 'riding',
+};
+
 export type Bounds = [number, number, number, number];
