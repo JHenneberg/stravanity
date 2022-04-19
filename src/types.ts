@@ -45,8 +45,8 @@ export type Computed = {
 };
 
 export enum ActivityType {
-  Running = 'running',
-  Riding = 'riding',
-};
+  Running = 'Running',
+  Riding = 'Riding',
+}
 
 export type Bounds = [number, number, number, number];

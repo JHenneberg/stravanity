@@ -3,6 +3,15 @@
     <div class="row justify-content-around">
       <div class="col-auto mb-4">
         <div class="btn-group">
+          <input type="radio" class="btn-check" id="running-radio" v-model="activityType" value="Running" />
+          <label class="btn btn-outline-primary" for="running-radio">Running</label>
+
+          <input type="radio" class="btn-check" id="riding-radio" v-model="activityType" value="Riding" />
+          <label class="btn btn-outline-primary" for="riding-radio">Riding</label>
+        </div>
+      </div>
+      <div class="col-auto mb-4">
+        <div class="btn-group">
           <input type="radio" class="btn-check" id="local-legend-radio" v-model="recordType" value="LocalLegend" />
           <label class="btn btn-outline-primary" for="local-legend-radio">Local Legend</label>
 
@@ -32,7 +41,7 @@
 
 <script lang="ts">
   import { defineComponent, PropType } from 'vue';
-  import { RecordType, Segment } from '@/types';
+  import { ActivityType, RecordType, Segment } from '@/types';
   import LocalLegendResult from '@/components/LocalLegendResult.vue';
   import CourseRecordResult from '@/components/CourseRecordResult.vue';
   import { isInBounds, parseTime } from '@/utils';
@@ -54,6 +63,7 @@
 
     data: () => ({
       recordType: RecordType.LocalLegend,
+      activityType: ActivityType.Running,
       onlyWomen: false,
     }),
 
