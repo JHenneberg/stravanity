@@ -3,10 +3,10 @@
     <div class="row justify-content-around">
       <div class="col-auto mb-4">
         <div class="btn-group">
-          <input type="radio" class="btn-check" id="running-radio" v-model="activityType" value="Running" />
+          <input type="radio" class="btn-check" id="running-radio" v-model="activityType" value="running" />
           <label class="btn btn-outline-primary" for="running-radio">Running</label>
 
-          <input type="radio" class="btn-check" id="riding-radio" v-model="activityType" value="Riding" />
+          <input type="radio" class="btn-check" id="riding-radio" v-model="activityType" value="riding" />
           <label class="btn btn-outline-primary" for="riding-radio">Riding</label>
         </div>
       </div>
